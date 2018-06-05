@@ -6,20 +6,12 @@ SPring 2018
 
 # Wireless-Vehicle-Dash-Board
 WIreless Vehicle DAsh Board Server Module
+This project contains a Bluetooth low energy Server and Client based wireless vehicle dash board. The server contains APDS 9031 light sensor,si7021 Humidity Sensor,BMA280 Accelerometer sensor and a GLCD, while as the client contains a GLCD to display data from server.
 
-This project deals with wirelessly steering a vehicle and using environmental sensors
-to adjust the drive in various kinds of environmental variations (Ambient
-light, Humidity and Temperature).
- In this project, I am implementing two BG boards, Board A is my server with all the sensors, including
-Accelerometer,Light sensor and Humidity sensor.The client on the other board recives the data from the
-sensors as Bluetooth service.
-
- The project aims at controlling a steering wheel of a vehicle wirelessly using
-accelerometer, Bluetooth and environmental sensors (Humidity, Ambient
-Light* and Temperature Sensor).The LCD on both the BGs will represent Vehicle Dash
-Board with Data indicating the ambient cadence, pressure and environmental
-humidity.
-Update on Description:
+ The client server pairing is authorized using MITM(Man in the Middle Protocol)
+
+ Persistent memory,I2C,SPI,BLE, Scheduler and Bluetooth Low Energy Service is also implemented as a part of project.
+
  Sensor data is represented as a state on LCD. Each sensor has two states for the client.
  BMA280 is represented as “Accelerating” and ”Non-Accelerating”
  Light Sensor is represented as “Day Light” and “Night” and is used as a service to the client
